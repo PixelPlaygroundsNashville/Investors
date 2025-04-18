@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pixel Playgrounds Nashville - The Future of In-Home Podcast, Gaming & Streaming Studios" />
+  <meta name="keywords" content="Pixel Playgrounds, Podcast Studios, Gaming Setup, Streamer Room, Nashville Creators, In-Home Studio Install, Brent Alexander" />
+  <meta name="author" content="Pixel Playgrounds Nashville" />
+  <title>Pixel Playgrounds Nashville | Investor Deck</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Global & Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #111;
+      color: #eee;
+      overflow-x: hidden;
+      position: relative;
+      cursor: none;
+    }
+    /* Custom Cursor */
+    .cursor {
+      position: fixed;
+      top: 0; left: 0;
+      width: 20px; height: 20px;
+      background: rgba(255,235,59,0.8);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+      z-index: 9999;
+    }
+    a:hover ~ .cursor { background: rgba(66, 134, 244,0.8); width: 30px; height: 30px; }
+    /* Progress Bar */
+    #progress-bar {
+      position: fixed; top: 0; left: 0;
+      height: 4px; background: #ffeb3b;
+      width: 0; z-index: 1000;
+    }
+    /* Particles background */
+    #tsparticles { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+    /* Container & Cards */
+    .container { max-width: 900px; margin: 4rem auto; padding: 0 1rem; }
+    .card {
+      backdrop-filter: blur(16px);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.7);
+      opacity: 0;
+      transform: translateY(40px) rotateX(8deg);
+      transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    }
+    .card.visible { opacity:1; transform: translateY(0) rotateX(0); }
+    /* Header & Glitch */
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      letter-spacing: 4px;
+      color: #ffeb3b;
+      position: relative;
+      animation: glitch 2s infinite;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 #4286f4, -2px 0 #ff6ec4; }
+      33% { text-shadow: -2px 0 #4286f4, 2px 0 #ff6ec4; }
+      66% { text-shadow: 2px 0 #4286f4, -2px 0 #ff6ec4; }
+      100% { text-shadow: -2px 0 #4286f4, 2px 0 #ff6ec4; }
+    }
+    header p { font-size:1.2rem; opacity:0.8; }
+    /* Sections */
+    h2 { font-family:'Orbitron',sans-serif; font-size:2rem; margin-bottom:1rem; color:#4286f4; }
+    p, ul li { font-size:1rem; line-height:1.6; }
+    ul { list-style:none; margin-left:1.5rem; }
+    ul li { margin-bottom:0.5rem; position:relative; padding-left:1.75rem; }
+    ul li::before { content:'●'; position:absolute; left:0; color:#ff6ec4; font-size:0.75rem; top:0.25rem; }
+    .highlight-box { margin-top:1rem; padding:1rem; border-left:4px solid #ff6ec4; background:rgba(255,110,196,0.05); border-radius:8px; }
+    .contact a { color:#ffeb3b; text-decoration:none; }
+    .contact a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>
+  <div id="progress-bar"></div>
+  <div class="cursor"></div>
+  <div class="container">
+    <header class="card">
+      <h1>PIXEL PLAYGROUNDS</h1>
+      <p>Nashville’s In-Home Creator Studio Revolution</p>
+    </header>
+
+    <section class="card" id="mission">
+      <h2>MISSION</h2>
+      <p>Transform spare rooms into cinematic-quality podcast, gaming, and streaming studios—installed in under 72 hours. We sell <em>confidence</em>, not just equipment.</p>
+    </section>
+
+    <section class="card" id="problem">
+      <h2>PROBLEM</h2>
+      <p>Creators drown in gear choices, cluttered cables, and acoustic chaos. They need a pro-grade studio without the headache.</p>
+    </section>
+
+    <section class="card" id="solution">
+      <h2>SOLUTION</h2>
+      <p>Pixel Playgrounds Nashville: end-to-end design, installation, and content delivery. Curated Windows/Apple rigs, acoustic treatment, RGB ambiance, cable mastery, AR previews, and SEO-ready Instagram reveals.</p>
+    </section>
+
+    <section class="card" id="advantage">
+      <h2>OUR ADVANTAGE</h2>
+      <p>We fuse storytelling with engineering. AR mockups, polish-first aesthetics, and built-in social assets set us leagues above DIY or generic installers.</p>
+    </section>
+
+    <section class="card" id="traction">
+      <h2>TRACTION</h2>
+      <ul>
+        <li>Site live & SEO-optimized</li>
+        <li>LLC formed; first install delivered</li>
+        <li>5K+ Nashville creators reached</li>
+        <li>Supplier demo gear partnerships</li>
+        <li>AR prototype & funding ladder active</li>
+      </ul>
+    </section>
+
+    <section class="card" id="audience">
+      <h2>TARGET</h2>
+      <p>Podcasters, streamers, gamers, voice actors, and educators aged 18–40 in Nashville craving studio-grade setups—fast.</p>
+    </section>
+
+    <section class="card" id="market">
+      <h2>GO-TO-MARKET</h2>
+      <div class="highlight-box">
+        <ul>
+          <li>Instagram-first case studies</li>
+          <li>Referral incentives & tagbacks</li>
+          <li>Local influencer partnerships</li>
+          <li>AR preview & instant booking</li>
+          <li>Targeted TikTok campaigns</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" id="funding">
+      <h2>ASK</h2>
+      <p><strong>$50K–$150K Seed</strong></p>
+      <div class="highlight-box">
+        <ul>
+          <li>High-end gear & parts</li>
+          <li>AR app & web refinements</li>
+          <li>3 sales reps + 1 installer</li>
+          <li>Content blitz across socials</li>
+          <li>Paid micro-influencer deals</li>
+          <li>Mobile studio van prototype</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" id="vision">
+      <h2>VISION</h2>
+      <p>Become the Southeast’s premier in-home studio installer—scale, automate, franchise.</p>
+    </section>
+
+    <section class="card" id="founder">
+      <h2>FOUNDER</h2>
+      <div class="highlight-box">
+        <p><strong>Brent Alexander</strong>—creator, engineer, automation strategist. Building the backbone of the creator economy.</p>
+      </div>
+    </section>
+
+    <section class="card contact" id="contact">
+      <h2>CONTACT</h2>
+      <p>IG: <a href="https://www.instagram.com/pixelplaygroundsnashville" target="_blank">@pixelplaygroundsnashville</a></p>
+      <p>Web: <a href="https://ppnhub.netlify.app" target="_blank">ppnhub.netlify.app</a></p>
+      <p>Email: <a href="mailto:ppnashville@icloud.com">ppnashville@icloud.com</a></p>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+  <script>
+    // Cursor
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.top = e.clientY + 'px';
+      cursor.style.left = e.clientX + 'px';
+    });
+    // Scroll Progress
+    const progressBar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+      progressBar.style.width = pct + '%';
+    });
+    // Card reveal
+    const cards = document.querySelectorAll('.card');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.2 });
+    cards.forEach(c => io.observe(c));
+    // tsParticles
+    tsParticles.load('tsparticles', { particles: { number: { value: 50 }, color: { value: ['#4286f4','#ff6ec4','#ffeb3b'] }, shape: { type: 'circle' }, opacity: { value: 0.3 }, size: { value: { min: 1, max: 3 } }, move: { enable: true, speed: 0.6, outModes: 'bounce' } }, interactivity: { events: { onHover: { enable: true, mode: 'grab' } } } });
+  </script>
+</body>
+</html>
